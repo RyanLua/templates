@@ -45,6 +45,13 @@
         }
     },
     "platforms": [
-        "Any"
-    ]
+        "Roblox",
+        "Luau"
+    ],
+    "keywords": [
+        "Aftman",
+        "Roblox",
+        "Luau",
+        "Rojo"
+    ],
 }
