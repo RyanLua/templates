@@ -1,0 +1,30 @@
+{
+	"name": "Roblox",
+	"image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
+
+	"features": {
+		"ghcr.io/ryanlua/features/rojo:latest": {
+			"version": "${templateOption:rojoVersion}",
+			"installAftman": "${templateOption:installAftman}"
+		}
+	},
+
+	"forwardPorts": [
+		34872
+	],
+	"portsAttributes": {
+		"34872": {
+			"label": "Rojo",
+			"onAutoForward": "notify"
+		}
+	}
+
+	// 👇 Uncomment to run a command after the container is created.
+	// "postCreateCommand": ""
+
+	// 👇 Configure tool-specific properties.
+	// "customizations": {},
+
+	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

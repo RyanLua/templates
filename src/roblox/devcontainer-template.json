@@ -1,0 +1,50 @@
+{
+    "id": "roblox",
+    "version": "0.1.0",
+    "name": "Roblox",
+    "description": "Roblox Template for development using Rojo",
+    "documentationURL": "https://github.com/ryanlua/templates/tree/main/src/roblox",
+    "licenseURL": "https://github.com/ryanlua/templates/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Ubuntu version (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon):",
+            "proposals": [
+                "jammy",
+                "focal",
+                "bionic"
+            ],
+            "default": "jammy"
+        },
+        "rojoVersion": {
+            "type": "string",
+            "description": "Select a Rojo version to install",
+            "proposals": [
+                "latest",
+                "7.4.1",
+                "7.4.0",
+                "7.3.0",
+                "7.2.1",
+                "7.1.1",
+                "7.0.0",
+                "6.2.0",
+                "6.1.0",
+                "6.0.2",
+                "0.5.4",
+                "0.4.13",
+                "0.3.2",
+                "0.2.3",
+                "0.1.0"
+            ],
+            "default": "latest"
+        },
+        "installAftman": {
+            "type": "boolean",
+            "description": "Install Aftman, a toolchain manager for tools like Rojo.",
+            "default": true
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
