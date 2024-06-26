@@ -12,8 +12,7 @@ jobs:
         id: filter
         with:
           filters: |
-            color: ./**/color/**
-            hello: ./**/hello/**
+            roblox: ./**/roblox/**
 
   test:
     needs: [detect-changes]
