@@ -30,24 +30,23 @@ The easier way to use this template is to use [GitHub Codespaces](https://github
 
 2. Click the **Code** button, then click the **Codespaces** tab, and then click **Create codespace**.
 
-    ![Create codespace on main](https://github.com/RyanLua/templates/assets/80087248/df4e2f4b-0ad3-4ae9-86a9-e43b4841df80)
+    <img alt="Create codespace on main" src="https://github.com/RyanLua/templates/assets/80087248/df4e2f4b-0ad3-4ae9-86a9-e43b4841df80" max-width=75%>
 
 3. Wait for the codespace to be created and open the Command Palette with <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows/Linux), then start typing "Add Dev Container Configuration Files". Click **Add Dev Container Configuration Files...**.
 
-    ![Command Palette](https://github.com/RyanLua/templates/assets/80087248/3ee5982f-0f9a-4f36-98d9-f4a0d7fa0d4e)
+    <img alt="Command Palette" src="https://github.com/RyanLua/templates/assets/80087248/3ee5982f-0f9a-4f36-98d9-f4a0d7fa0d4e" max-width=75%>
 
 4. Select **Create a new configuration...**. Type `ghcr.io/ryanlua/templates/roblox` and click **Use 'ghcr.io/ryanlua/templates/roblox' as a template...**.
 
-    ![Add Dev Container Configuration Files](https://github.com/RyanLua/templates/assets/80087248/8aa955a8-4a9f-4a88-a476-6035cd01e7dd)
+    <img alt="Add Dev Container Configuration Files" src="https://github.com/RyanLua/templates/assets/80087248/8aa955a8-4a9f-4a88-a476-6035cd01e7dd" max-width=75%>
 
 5. A new file `devcontainer.json` will be created. This is your dev container configuration with the Roblox template applied. In the Activity Bar, click the **Source Control** view and stage the file by clicking + next to the file.
 
-    ![Source Control](https://github.com/RyanLua/templates/assets/80087248/1c3fa187-9e49-44a8-924c-1cda4df27010)
+    <img alt="Source Control" src="https://github.com/RyanLua/templates/assets/80087248/1c3fa187-9e49-44a8-924c-1cda4df27010" max-width=75%>
 
 6. To commit your staged changes, type a commit message describing, then click **Commit**, then **Sync**.
 
-    ![Commit](https://github.com/RyanLua/templates/assets/80087248/ff9a73ff-9b52-4a18-8328-7871e76c6a32)
-
+    <img alt="Commit" src="https://github.com/RyanLua/templates/assets/80087248/ff9a73ff-9b52-4a18-8328-7871e76c6a32" max-width=75%>
 
 ## Contributing
 
