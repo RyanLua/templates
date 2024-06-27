@@ -2,7 +2,7 @@
     "id": "roblox",
     "version": "0.1.0",
     "name": "Roblox",
-    "description": "Roblox Template for development using Rojo",
+    "description": "Develop on Roblox using Rojo. Includes a toolchain manager, extensions, CLI, and dependencies.",
     "documentationURL": "https://github.com/ryanlua/templates/tree/main/src/roblox",
     "licenseURL": "https://github.com/ryanlua/templates/blob/main/LICENSE",
     "options": {
@@ -45,6 +45,13 @@
         }
     },
     "platforms": [
-        "Any"
-    ]
+        "Roblox",
+        "Luau"
+    ],
+    "keywords": [
+        "Aftman",
+        "Roblox",
+        "Luau",
+        "Rojo"
+    ],
 }
