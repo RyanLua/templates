@@ -36,7 +36,7 @@ This template is used in the following repositories:
 
 Go test out this template in the wild and see how it works.
 
-## How can I use the Template?
+## Applying this template
 
 The easier way to use this template is to use [GitHub Codespaces](https://github.com/features/codespaces) to apply it to your project.
 
