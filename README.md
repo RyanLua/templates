@@ -64,6 +64,81 @@ Now when someone opens your project in a [supporting tool](https://containers.de
 
 What's next is to modify your dev container configuration to do things like automatically install [Aftman](https://github.com/LPGhatguy/aftman) tools, install [Wally](https://wally.run/) dependencies, and more.
 
+## Configuring the Dev Container
+
+By default this template will install Rojo, Aftman, and a few VSCode extensions to get you started. 
+
+### Automatically installing tools, packages, and dependencies
+
+You can modify the `devcontainer.json` to be able to install Aftman tools and more by changing the `postCreateCommand` key.
+
+Here, we will install all Aftman tools from your project's `aftman.toml` file. This is useful if you have a project that uses Aftman and you want to install all the tools automatically.
+
+```json
+{
+    ...
+
+    // Install Aftman tools
+	"postCreateCommand": "aftman install --no-trust-check",
+
+    ...
+}
+```
+
+If your project uses Wally, you use the `&&` operator to specify multiple commands. Here, we will install Aftman tools and Wally packages.
+
+```json
+{
+    ...
+
+    // Install Aftman tools and Wally packages
+	"postCreateCommand": "aftman install --no-trust-check && wally install",
+
+    ...
+}
+```
+
+You now can install everything that your project needs, automatically, without needing to do anything. They are other commands you can use as well like `apt` or `git`.
+
+### Adding more VSCode extensions
+
+The template installs a few VSCode extensions to get you started which include:
+
+* [Rojo](https://marketplace.visualstudio.com/items?itemName=evaera.vscode-rojo) (required)
+* [Selene](https://marketplace.visualstudio.com/items?itemName=Kampfkarren.selene-vscode)
+* [StyLua](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.StyLua)
+* [Luau Language Server](https://marketplace.visualstudio.com/items?itemName=johnnymorganz.luau-lsp)
+
+You can remove all the extensions except for Rojo if you want to start fresh. You can also add more extensions by modifying the `devcontainer.json` file.
+
+The extensions come pre-filled like the below. You can add more extensions or remove some.
+
+```json
+{
+    ...
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"kampfkarren.selene-vscode",
+				"johnnymorganz.stylua",
+				"johnnymorganz.luau-lsp"
+			]
+		}
+	},
+
+    ...
+}
+```
+
+### Additional configuration
+
+This covers the most important parts of configuring your dev container but you can learn more at the [Dev Container metadata reference](https://containers.dev/implementors/json_reference/) where you can learn more about how to configure your dev container which includes
+
+* Using a different forwarded port
+* Changing/overriding environment variables
+* Mounting to your container which allows caching
+
 ## Contributing
 
 If you're looking to contribute to this project, consider seeing [CONTRIBUTING.md](.github/CONTRIBUTING.md) for more about how to develop this project and test it yourself.
