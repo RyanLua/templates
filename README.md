@@ -1,5 +1,8 @@
 # Roblox Dev Container Template
 
+> [!IMPORTANT]
+> This project is in its very early stages and there may be unexpected bugs, lacking documentation, and more. Use this dev container template carefully and do not depend on it to develop.
+
 Dev Container Template for Roblox. Allows Roblox developers to develop in the cloud easily and with zero effort. Supporting your favorite tools with automatic installation so all you need to focus on is scripting.
 
 ### Why should I use dev containers?
@@ -47,6 +50,10 @@ The easier way to use this template is to use [GitHub Codespaces](https://github
 6. To commit your staged changes, type a commit message describing, then click **Commit**, then **Sync**.
 
     <img alt="Commit" src="https://github.com/RyanLua/templates/assets/80087248/ff9a73ff-9b52-4a18-8328-7871e76c6a32" width=50%>
+
+Now when someone opens your project in a [supporting tool](https://containers.dev/supporting) like GitHub Codespaces, it will use your dev container configuration to set up Rojo and Aftman (optionally). Tell your contributors you support codespaces and add a link to an "Open in GitHub Codespaces" badge by reading about "[Facilitating quick creation and resumption of codespaces](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces)"
+
+What's next is to modify your dev container configuration to do things like automatically install [Aftman](https://github.com/LPGhatguy/aftman) tools, install [Wally](https://wally.run/) dependencies, and more.
 
 ## Contributing
 
