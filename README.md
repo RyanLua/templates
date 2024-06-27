@@ -1,5 +1,7 @@
 # Roblox Dev Container Template
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/RyanLua/templates?quickstart=1)
+
 > [!IMPORTANT]
 > This project is in its very early stages and there may be unexpected bugs, lacking documentation, and more. Use this dev container template carefully and do not depend on it to develop.
 
