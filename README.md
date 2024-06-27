@@ -76,7 +76,7 @@ You can modify the `devcontainer.json` to be able to install Aftman tools and mo
 
 Here, we will install all Aftman tools from your project's `aftman.toml` file. This is useful if you have a project that uses Aftman and you want to install all the tools automatically.
 
-```json
+```
 {
     ...
 
@@ -89,7 +89,7 @@ Here, we will install all Aftman tools from your project's `aftman.toml` file. T
 
 If your project uses Wally, you use the `&&` operator to specify multiple commands. Here, we will install Aftman tools and Wally packages.
 
-```json
+```
 {
     ...
 
@@ -115,7 +115,7 @@ You can remove all the extensions except for Rojo if you want to start fresh. Yo
 
 The extensions come pre-filled like the below. You can add more extensions or remove some.
 
-```json
+```
 {
     ...
 
