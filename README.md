@@ -25,6 +25,15 @@ Even though you can run a dev container on any device if you're using a cloud-ba
 
 Rojo won't be able to access your computer because it's running in a dev container. This means if your build a Roblox place using Rojo it won't actually save that file to your computer but rather that container. Additionally, some features on the [Rojo Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=evaera.vscode-rojo) like [installing the Rojo plugin for Roblox Studio](https://rojo.space/docs/v7/getting-started/installation/#installing-the-plugin) won't work. You will need to install that yourself from the [Rojo 7 plugin on Roblox.com](https://create.roblox.com/store/asset/13916111004).
 
+## Examples
+
+This template is used in the following repositories:
+
+* [rojo-showcase-template](https://github.com/RyanLua/rojo-showcase-template)
+* [Satchel](https://github.com/RyanLua/Satchel) (experimental support)
+
+Go test out this template in the wild and see how it works.
+
 ## How can I use the Template?
 
 The easier way to use this template is to use [GitHub Codespaces](https://github.com/features/codespaces) to apply it to your project.
