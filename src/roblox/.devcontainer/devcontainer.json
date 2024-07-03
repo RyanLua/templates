@@ -20,7 +20,7 @@
 	},
 
 	// 👇 Uncomment to run a command after the container is created.
-	// "postCreateCommand": "",
+	// "postCreateCommand": "aftman install --no-trust-check",
 
 	"customizations": {
 		"vscode": {
