@@ -3,7 +3,7 @@
 {
 	"name": "Roblox",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfil
-	"image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	"features": {
 		"ghcr.io/ryanlua/features/rojo:latest": {
