@@ -20,9 +20,21 @@ This makes it great for teams, open-source projects, or even just you if you tra
 
 ### Known issues and remarks
 
+Known issues related to using Rojo in a dev container.
+
+#### A device running Roblox Studio is needed to sync
+
 You need a device that can run Roblox Studio to be able to sync code and publish places. This just allows you to use any device to edit code and a bit more. You can still build models and places using Rojo as well as download them.
 
+#### Rojo can't install the Roblox Studio plugin
+
 Rojo can't install the Rojo plugin for Roblox Studio since it is running in the cloud and does not have access to your device. You will to install it manually from [GitHub](https://github.com/rojo-rbx/rojo/releases) or the [Roblox Creator Store](https://create.roblox.com/store/asset/13916111004).
+
+#### Port needs to be 80 on Roblox Studio
+
+Because of how GitHub Codespaces works, if you want to sync to Roblox Studio in a codespace, you need to set the port to `80` in the plugin even though it shows it is forwarded as `34872`.
+
+You also need to remove the `https://` at the beginning and the `/` end of the forwarded address. `https://your-project-34872.app.github.dev/` turns into `your-project-34872.app.github.dev`.
 
 ## Examples
 
