@@ -23,9 +23,9 @@ This makes it great for teams, open-source projects, or even just you if you tra
 
 ### Known issues and remarks
 
-Even though you can run a dev container on any device if you're using a cloud-based container, you still will need a desktop computer that runs Roblox Studio to be able to sync that code onto Roblox. While you can edit code on a phone, you need a desktop to sync that code to Roblox. This doesn't stop you from editing code right now and then syncing later when you do have an available machine.
+You need a device that can run Roblox Studio to be able to sync code and publish places. This just allows you to use any device to edit code and a bit more. You can still build models and places using Rojo as well as download them.
 
-Rojo won't be able to access your computer because it's running in a dev container. This means if your build a Roblox place using Rojo it won't actually save that file to your computer but rather that container. Additionally, some features on the [Rojo Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=evaera.vscode-rojo) like [installing the Rojo plugin for Roblox Studio](https://rojo.space/docs/v7/getting-started/installation/#installing-the-plugin) won't work. You will need to install that yourself from the [Rojo 7 plugin on Roblox.com](https://create.roblox.com/store/asset/13916111004).
+Rojo can't install the Rojo plugin for Roblox Studio since it is running in the cloud and does not have access to your device. You will to install it manually from [GitHub](https://github.com/rojo-rbx/rojo/releases) or the [Roblox Creator Store](https://create.roblox.com/store/asset/13916111004).
 
 ## Examples
 
