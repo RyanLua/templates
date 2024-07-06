@@ -4,6 +4,7 @@
     "name": "Roblox",
     "description": "Develop on Roblox using Rojo. Includes a toolchain manager, extensions, CLI, and dependencies.",
     "documentationURL": "https://github.com/ryanlua/templates/tree/main/src/roblox",
+    "publisher": "Ryan Luu",
     "licenseURL": "https://github.com/ryanlua/templates/blob/main/LICENSE",
     "options": {
         "imageVariant": {
