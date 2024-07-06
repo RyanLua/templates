@@ -5,7 +5,6 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfil
 	"image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/ryanlua/features/rojo:latest": {
 			"version": "${templateOption:rojoVersion}",
