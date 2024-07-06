@@ -137,9 +137,3 @@ This covers the most important parts of configuring your dev container but you c
 * Using a different forwarded port
 * Changing/overriding environment variables
 * Mounting to your container which allows caching
-
-## Contributing
-
-If you're looking to contribute to this project, consider seeing [CONTRIBUTING.md](.github/CONTRIBUTING.md) for more about how to develop this project and test it yourself.
-
-This project supports dev containers allowing you to contribute easily from within the browser and without needing you to install/download any tools.
