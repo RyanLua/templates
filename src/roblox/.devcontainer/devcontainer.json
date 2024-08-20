@@ -2,7 +2,7 @@
 // README at: https://github.com/ryanlua/templates/tree/main/src/roblox
 {
 	"name": "Roblox",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfil
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	"features": {
