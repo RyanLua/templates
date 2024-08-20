@@ -1,15 +1,14 @@
 
 # Roblox (roblox)
 
-Roblox Template for development using Rojo
+Develop on Roblox using Rojo. Includes a toolchain manager, extensions, CLI, and dependencies.
 
 ## Options
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| imageVariant | Ubuntu version (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon): | string | jammy |
 | rojoVersion | Select a Rojo version to install | string | latest |
-| installAftman | Install Aftman, a toolchain manager for tools like Rojo. | boolean | true |
+| toolchainManager | Select a toolchain manager to install. | string | rokit |
 
 
 
