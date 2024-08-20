@@ -29,10 +29,16 @@
             ],
             "default": "latest"
         },
-        "installAftman": {
-            "type": "boolean",
-            "description": "Install Aftman, a toolchain manager for tools like Rojo.",
-            "default": true
+        "toolchainManager": {
+            "type": "string",
+            "enum": [
+                "aftman",
+                "foreman",
+                "rokit",
+                "none"
+            ],
+            "default": "rokit",
+            "description": "Select a toolchain manager to install."
         }
     },
     "platforms": [
@@ -40,9 +46,11 @@
         "Luau"
     ],
     "keywords": [
+        "Rokit",
         "Aftman",
+        "Foreman",
         "Roblox",
         "Luau",
         "Rojo"
-    ],
+    ]
 }
