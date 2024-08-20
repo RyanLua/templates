@@ -71,39 +71,42 @@ The easier way to use this template is to use [GitHub Codespaces](https://github
 
     <img alt="Commit" src="https://github.com/RyanLua/templates/assets/80087248/ff9a73ff-9b52-4a18-8328-7871e76c6a32" width=50%>
 
-Now when someone opens your project in a [supporting tool](https://containers.dev/supporting) like GitHub Codespaces, it will use your dev container configuration to set up Rojo and Aftman (optionally). Tell your contributors you support codespaces and add a link to an "Open in GitHub Codespaces" badge by reading about "[Facilitating quick creation and resumption of codespaces](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces)"
+Now when someone opens your project in a [supporting tool](https://containers.dev/supporting) like GitHub Codespaces, it will use your dev container configuration to set up Rojo and [Rokit](https://github.com/rojo-rbx/rokit), [Aftman](https://github.com/LPGhatguy/aftman), or [Foreman](https://github.com/Roblox/foreman) (optionally). Tell your contributors you support codespaces and add a link to an "Open in GitHub Codespaces" badge by reading about "[Facilitating quick creation and resumption of codespaces](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces)"
 
-What's next is to modify your dev container configuration to do things like automatically install [Aftman](https://github.com/LPGhatguy/aftman) tools, install [Wally](https://wally.run/) dependencies, and more.
+What's next is to modify your dev container configuration to do things like automatically install toolchain tools, install [Wally](https://wally.run/) dependencies, and more.
 
 ## Configuring the Dev Container
 
-By default this template will install Rojo, Aftman, and a few VSCode extensions to get you started. 
+By default this template will install Rojo, Rokit, and a few VSCode extensions to get you started.
 
 ### Automatically installing tools, packages, and dependencies
 
-You can modify the `devcontainer.json` to be able to install Aftman tools and more by changing the `postCreateCommand` key.
+> [!NOTE]
+> Rokit has compatibility with projects that already use `aftman.toml` and `foreman.toml` files so the default toolchain manager should work with your project.
 
-Here, we will install all Aftman tools from your project's `aftman.toml` file. This is useful if you have a project that uses Aftman and you want to install all the tools automatically.
+You can modify the `devcontainer.json` to be able to install toolchain tools and more by changing the `postCreateCommand` key.
+
+Here, we will install all Rokit tools from your project's `rokit.toml` file. This is useful if you have a project that uses Rokit and you want to install all the tools automatically.
 
 ```json5
 {
 	...
 
-	// Install Aftman tools
-	"postCreateCommand": "aftman install --no-trust-check",
+	// Install Rokit tools
+	"postCreateCommand": "rokit install --no-trust-check",
 
 	...
 }
 ```
 
-If your project uses Wally, you use the `&&` operator to specify multiple commands. Here, we will install Aftman tools and Wally packages.
+If your project uses Wally, you use the `&&` operator to specify multiple commands. Here, we will install Rokit tools and Wally packages.
 
 ```json5
 {
 	...
 
-	// Install Aftman tools and Wally packages
-	"postCreateCommand": "aftman install --no-trust-check && wally install",
+	// Install Rokit tools and Wally packages
+	"postCreateCommand": "rokit install --no-trust-check && wally install",
 
 	...
 }
