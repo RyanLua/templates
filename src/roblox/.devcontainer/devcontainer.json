@@ -6,9 +6,9 @@
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	"features": {
-		"ghcr.io/ryanlua/features/rojo:latest": {
+		"ghcr.io/ryanlua/features/rojo:0.2.0": {
 			"version": "${templateOption:rojoVersion}",
-			"installAftman": "${templateOption:installAftman}"
+			"toolchainManager": "${templateOption:toolchainManager}"
 		}
 	},
 
