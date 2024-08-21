@@ -31,7 +31,7 @@
 	// 		"34872": {
 	// 			"label": "Rojo"
 	// 		}
-	// }
+	// },
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "rokit install --no-trust-check",
