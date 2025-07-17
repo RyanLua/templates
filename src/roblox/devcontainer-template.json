@@ -1,6 +1,6 @@
 {
     "id": "roblox",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "name": "Roblox",
     "description": "Develop on Roblox using Rojo. Includes a toolchain manager, extensions, CLI, and dependencies.",
     "documentationURL": "https://github.com/ryanlua/templates/tree/main/src/roblox",
